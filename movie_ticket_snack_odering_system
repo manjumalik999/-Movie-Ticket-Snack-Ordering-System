@@ -1,0 +1,81 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    string ticketcounter ;
+
+    cout << "Tell your movie name: "<< endl ;
+    cin >> ticketcounter ;
+
+    int number ;
+
+    cout << "enter your ticket number: " << endl;
+    cin >> number ;
+
+    string foodcounter;
+
+    cout << "Are you interested in food: ";
+    cin >> foodcounter;
+
+
+    if (foodcounter == "yes" || foodcounter == "YES" )
+    {
+        cout << "what would you like to have ?" << endl ;
+        cout << "popcorn , drinks or fastfood !" << endl;
+
+        string order;
+        cin >> order;
+
+        if (order == "popcorn" || order == "yes")
+        {
+            cout << "which kind of popcorn you want ?" << endl;
+            cout << "caramalized , plain or salty !" << endl;
+
+            string kind;
+            cout << "enter your favourite flavour: " << endl;
+            cin >> kind;
+
+            cout << "okey , you can have your order after 5 minutes." << endl;
+
+            cout << "enjoy your movie."<< endl;
+
+        }
+
+        else if (order == "drinks" || order == "yes")
+        {
+            cout << "which drink do you want ?" << endl;
+            cout << "we have: cold coffee , sprite and coke." << endl;
+
+            string choice;
+            cout << "enter your favourite one: " << endl;
+            getline(cin >> ws, choice);
+
+            cout << "okey , you can have your order in 5 minutes." << endl;
+
+            cout << "enjoy your movie with drinks." << endl;
+
+        }
+
+        else if (order == "fastfood" || order == "yes")
+        {
+            cout << "what do you want ?" << endl;
+            cout << "burger, pizza or pasta !" << endl;
+
+            string want;
+            cout << "enter your choice: " << endl;
+            cin >> want;
+
+            cout << "okey , you can have your order after 5 minutes." << endl;
+            cout << "enjoy you movie with snacks." << endl;
+        }
+            }
+            
+            else 
+            {
+                cout << "okay , enjoy your movie." << endl;
+            }
+
+              return 0;
+
+        }
+   
